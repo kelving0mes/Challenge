@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&family=Oxygen:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*
+    Mudando cor de seletor com o código abaixo (obs: Seletor de algum tipo de texto)
+
+    *::selection {
+        color: rgba(230, 230, 230, 1);
+        background: rgba(123, 67, 151, 1);
+    }
+*/
+
+html {
+    /* setando variveis de uso */
+    --colorAncora: rgba(230, 230, 230, 1);
+    --colorAncoraHover: rgba(0, 178, 255, 1);
+    --colorText: rgba(230, 230, 230, 1);
+    --colorTextTwo: rgba(0, 178, 255, 1);
+    --subtext-color: rgba(182, 182, 182, 1);
+    --background: rgba(37, 37, 37, 1);
+    --secondBackground: rgba(53, 53, 53, 1);
+
+    --colorCardUser: rgba(122, 0, 237, 1); /*Dev Color*/
+
+    --backgroundScrollBarTrack: rgba(37, 37, 37, 0);
+    --backgroundScrollBarThumb: rgba(123, 67, 151, 1);
+    --backgroundScrollBarThumbHover: rgb(206, 110, 253);
+
+    /*  exemplos
+        "font-size: 1.6rem;" é igual a "font-size: 16px;"
+        "font-size: 2rem;" é igual a "font-size: 20px;"
+        "font-size: 3.9rem;" é igual a "font-size: 39px;"
+        "font-size: 100rem;" é igual a "font-size: 100px;"
+    */
+
+    /*O font-size abaixo, no root(raiz) do html faz com que a cada 1rem seja 10px*/
+    font-size: 62.5%;
+    font-family: 'Noto Sans', sans-serif;
+    background: var(--background);
+    color: var(--colorText);
+}
+
+
+/*      Header style manipulation field     */
+.top-header {
+    width: calc(100% * 1vw);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.devspot-logo {
+    width: 200px;
+    height: 100px;
+}
+
+.menu-navigation {
+    width: auto;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-navigation>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3.25rem;
+    list-style: none;
+}
+
+.menu-navigation > ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--colorAncora);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.menu-navigation > ul > li > a:hover {
+    color: var(--colorAncoraHover);
+}
+
+/*      Main style manipulation field     */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: calc(100% * 1vh);
+    height: auto;
+}
+
+.section-title {
+    width: 100%;
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-card {
+    width: 85.3em;
+    height: 20.4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.title-card > .title {
+    font-size: 4.9rem;
+    font-weight: 500;
+    color: var(--colorText);
+}
+
+.title-card > .description {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: var(--subtext-color);
+    text-align: center;
+}
+
+.title-card > .description > #challenge {
+    color: var(--colorTextTwo);
+    text-decoration: underline;
+}
+
+.cards {
+    width: 74%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-template {
+    border: 1px solid var(--colorCardUser);
+    width: 32em;
+    height: 72.6vh;
+    border-radius: 12px;
+    margin: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.image-container {
+    width: 45%;
+    height: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3.4%;
+}
+
+.dev-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 6px;
+    border: 4px solid var(--colorCardUser);
+}
+
+
+.dev-infos {
+    width: 100%;
+    height: 59%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tag-name {
+    width: 100%;
+    height: 22%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.dev-name, .dev-rm {
+    font-weight: 500;
+    color: var(--colorText);
+}
+
+.dev-name {
+    font-size: 1.8rem;
+}
+
+.dev-rm {
+    font-size: 1.5rem;
+}
+
+.dev-description {
+    width: 100%;
+    height: 78%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.group {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dev-description > .group > .description {
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: auto;
+    height: 2.5rem;
+}
+
+.sub-description {
+    width: 85%;
+    height: auto;
+    font-size: 1.4rem;
+    font-size: 400;
+    text-align: center;
+}
+
+.dev-social-icons {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--colorCardUser);
+    backdrop-filter: 50px;
+}
+
+
+/*      Footer Style Manipulation Field       */
+.footer {
+    width: calc(100% * 1vw);
+    height: 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.4em;
+}
+
+.water-mark {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.text-mark {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--colorText);
+}
+
+.nav-links {
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links > .redirection {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: auto;
+    gap: 3rem;
+}
+
+.nav-links > .redirection > a {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--colorAncora);
+    text-decoration: none;
+}
+
+.nav-links > .icons {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+/*     Scroll Bar style manipulation field     */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--backgroundScrollBarTrack);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--backgroundScrollBarThumb);
+    border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--backgroundScrollBarThumbHover);
+}

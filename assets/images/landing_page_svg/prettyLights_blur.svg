@@ -1,0 +1,38 @@
+<svg width="1440" height="860" viewBox="0 0 1440 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_128_5)" filter="url(#filter0_b_128_5)">
+        <g filter="url(#filter1_f_128_5)">
+            <ellipse cx="1064.21" cy="510.658" rx="267.158" ry="148.106"
+                transform="rotate(-34.199 1064.21 510.658)" fill="#3BDCFF" fill-opacity="0.86" />
+        </g>
+        <g filter="url(#filter2_f_128_5)">
+            <ellipse cx="463.812" cy="383.775" rx="363.5" ry="160"
+                transform="rotate(-26.1386 463.812 383.775)" fill="#7B4397" />
+        </g>
+    </g>
+    <defs>
+        <filter id="filter0_b_128_5" x="-50" y="-50" width="1540" height="960"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="25" />
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_128_5" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_128_5"
+                result="shape" />
+        </filter>
+        <filter id="filter1_f_128_5" x="613.021" y="101.864" width="902.377" height="817.588"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="107.5" result="effect1_foregroundBlur_128_5" />
+        </filter>
+        <filter id="filter2_f_128_5" x="-85.1084" y="-46.3451" width="1097.84" height="860.239"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="107.5" result="effect1_foregroundBlur_128_5" />
+        </filter>
+        <clipPath id="clip0_128_5">
+            <rect width="1440" height="860" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
+    

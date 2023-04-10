@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&family=Oxygen:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*
+    Mudando cor de seletor com o código abaixo (obs: Seletor de algum tipo de texto)
+
+    *::selection {
+        color: rgba(230, 230, 230, 1);
+        background: rgba(123, 67, 151, 1);
+    }
+*/
+
+html {
+    /* setando variveis de uso */
+    --colorAncora: rgba(230, 230, 230, 1);
+    --colorAncoraHover: rgba(0, 178, 255, 1);
+    --colorText: rgba(230, 230, 230, 1);
+    --colorTextTwo: rgba(0, 178, 255, 1);
+    --subtext-color: rgba(182, 182, 182, 1);
+    --background: rgba(37, 37, 37, 1);
+    --secondBackground: rgba(53, 53, 53, 1);
+    --backgroundButton: rgba(2, 170, 241, 1);
+    --backgroundButtonHover: rgba(2, 142, 202, 1);
+    --ledBallOneBackground: rgba(123, 67, 151, 1);
+    --ledBallTwoBackground: rgba(59, 220, 255, 0.86);
+
+    --backgroundScrollBarTrack: rgba(37, 37, 37, 0);
+    --backgroundScrollBarThumb: rgba(123, 67, 151, 1);
+    --backgroundScrollBarThumbHover: rgb(206, 110, 253);
+
+    /*  exemplos
+        "font-size: 1.6rem;" é igual a "font-size: 16px;"
+        "font-size: 2rem;" é igual a "font-size: 20px;"
+        "font-size: 3.9rem;" é igual a "font-size: 39px;"
+        "font-size: 100rem;" é igual a "font-size: 100px;"
+    */
+
+    /*O font-size abaixo, no root(raiz) do html faz com que a cada 1rem seja 10px*/
+    font-size: 62.5%;
+    font-family: 'Noto Sans', sans-serif;
+    background: var(--background);
+    color: var(--colorText);
+    scroll-behavior: smooth;
+}
+
+
+/*      Header style manipulation field     */
+.top-header {
+    width: calc(100% * 1vw);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.devspot-logo {
+    width: 200px;
+    height: 100px;
+}
+
+.menu-navigation {
+    width: auto;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-navigation>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3.25rem;
+    list-style: none;
+}
+
+.menu-navigation > ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--colorAncora);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.menu-navigation > ul > li > a:hover {
+    color: var(--colorAncoraHover);
+}
+
+/*      Main style manipulation field     */
+        /*      Main First      */
+.style-main {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% * 1vh);
+    height: auto;
+}
+
+.main-first {
+    width: calc(100% * 1vw);
+    height: 106vh;
+    backdrop-filter: blur(25px);
+}
+
+.led-ball-purple {
+    position: absolute;
+    width: 67.7em;
+    height: 32em;
+    top: 13.3em;
+    left: 8.6em;
+    /* daqui pra baixo set de cor, filtro e rotação no eixo Y da light*/
+    background: #7B4397;
+    filter: blur(107.5px);
+    transform: rotate(-21.05deg);
+}
+
+.led-ball-blue {
+    position: absolute;
+    width: 45.43em;
+    height: 28.47em;
+    top: 27.41em;
+    left: 84.17em;
+
+    background: rgba(59, 220, 255, 0.86);
+    filter: blur(150px);
+    transform: rotate(-34.2deg);
+}
+
+.content-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 300px;
+    /*
+    background: url(../images/prettyLights_blur.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+}
+
+.presentation-card {
+    width: 812px;
+    height: 420px;
+    background: var(--secondBackground);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 40%;
+    z-index: 1;
+}
+
+.text-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.division-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.division-card > .future-text {
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+
+.blue-alem {
+    color: var(--colorAncoraHover)
+}
+
+.division-card > .agility-text {
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 3.4rem;
+}
+
+.division-card > .way-text {
+    width: 80%;
+    height: auto;
+    font-size: 1.6rem;
+    color: var(--subtext-color);
+    text-align: center;
+}
+
+.submit-box-button {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.saiba-mais {
+    background: var(--backgroundButton);
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--colorText);
+    text-transform: uppercase;
+    gap: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 300ms;
+}
+
+.saiba-mais:hover {
+    background: var(--backgroundButtonHover);
+    transform: scale(1.04);
+}
+
+        /*      Button-Scroll       */
+
+.button-scroll {
+    position: absolute;
+    width: 50px;
+    /*
+        altura convertida de px para em, segue um exemplo
+        px: 13.81
+        em: 11.65
+    */
+    height: 11.65em;
+    top: 112vh;
+    left: 48vw;
+    font-size: 1.4rem;
+    font-weight: 300;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.button-scroll > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--colorAncora);
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+        /*      Main Second      */
+.main-second {
+    background: var(--background);
+    width: calc(100% * 1vw);
+    height: 873px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-card-comming {
+    width: 80em;
+    height: 40em;
+    border: 1px solid white;
+}
+
+.content-card-comming > section {
+    width: 100%;
+    height: 100%;
+    gap: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-more-info {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--colorText);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.more-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--subtext-color);
+    gap: .8rem;
+}
+
+.linked {
+    text-decoration: none;
+    color: var(--colorTextTwo);
+}
+
+
+/*      Footer Style Manipulation Field       */
+.footer {
+    width: calc(100% * 1vw);
+    height: 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.4em;
+}
+
+.water-mark {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.text-mark {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--colorText);
+}
+
+.nav-links {
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links > .redirection {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: auto;
+    gap: 3rem;
+}
+
+.nav-links > .redirection > a {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--colorAncora);
+    text-decoration: none;
+}
+
+.nav-links > .icons {
+    width: 10%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+/*     Scroll Bar style manipulation field     */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--backgroundScrollBarTrack);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--backgroundScrollBarThumb);
+    border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--backgroundScrollBarThumbHover);
+}
