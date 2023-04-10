@@ -21,7 +21,7 @@ html {
     --colorAncoraHover: rgba(0, 178, 255, 1);
     --colorText: rgba(230, 230, 230, 1);
     --colorTextTwo: rgba(0, 178, 255, 1);
-    --subtext-color: rgba(182, 182, 182, 1);
+    --subtext-color: rgb(158, 157, 157);
     --background: rgba(37, 37, 37, 1);
     --secondBackground: rgba(53, 53, 53, 1);
     --backgroundButton: rgba(2, 170, 241, 1);
