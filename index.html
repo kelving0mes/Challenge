@@ -1,67 +1,208 @@
 <!DOCTYPE html>
 
-<html lang="pt-br ">
-  <head>
+<html lang="pt-br">
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevSpot Challenge Porto Seguro</title>
-  </head>
-  <body>
-    <div class="container">
-        <aside>
-            <li>
-                <a href="./Paginas/Logon/home.html">Home</a>
-            </li>
-            <li>
-                <a href="./Paginas/Contratos/contratos.html">Contratos</a>
-            </li>
-            <li>
-                <a href="./Paginas/Contratos/financeiro.html">Financeiro</a>
-            </li>
-            <li>
-                <a href="./Paginas/Contratos/meusContratos.html">Meus Contratos</a>
-            </li>
-            <li>
-                <a href="./Paginas/contratosVistoria/vistoria.html">Vistoria</a>
-            </li>
-            <li>
-                <a href="./Paginas/contratosVistoria/vistoriaConclusão.html">Vistoria Concluída</a>
-            </li>
-            <li>
-                <a href="./Paginas/Login/login.html">Login</a>
-            </li>
-            <li>
-                <a href="./Paginas/Login/esqueciSenha.html">Esqueci a Senha</a>
-            </li>
-            <li>
-                <a href="./Paginas/Logon/Produtos/produtos.html">Produtos</a>
-            </li>
-            <li>
-                <a href="./Paginas/Logon/Produtos/meusProdutos.html">Meus Produtos</a>
-            </li>
-            <li>
-                <a href="./Paginas/Logon/Produtos/produtoItens/produtoA.html">Produto A</a>
-            </li>
-            <li>
-                <a href="./Paginas/Logon/Produtos/produtoItens/produtoB.html">Produto B</a>
-            </li>
-            <li>
-                <a href="./Paginas/Logon/Produtos/produtoItens/produtoC.html">Produto C</a>
-            </li>
-            <li>
-                <a href="./Paginas/Logon/Produtos/carrinho/produtoEscolhido.html">Produto Escolhido</a>
-            </li>
-            <li>
-                <a href="./Paginas/Sobre/contato.html">Contato</a>
-            </li>
-            <li>
-                <a href="./Paginas/Sobre/organograma.html">Organograma</a>
-            </li>
-            <li>
-                <a href="./Paginas/Sobre/sobre.html">Sobre nós</a>
-            </li>
-        </aside>
-    </div>
-  </body>
+    <link rel="stylesheet" href="./assets/css/index_landing_Page/index.css">
+    <script src="./assets/js/index.js" defer></script>
+    <title id="title_page">DevSpot | Home</title>
+</head>
+
+<body>
+    <header class="top-header">
+        <section class="header">
+            <img src="./assets/images/landing_page_svg/DevSpot_no_backgroud.png" alt="logo aqui."
+                class="devspot-logo" />
+            <nav class="menu-navigation">
+                <ul>
+                    <li>
+                        <a href="./Paginas/Sobre/sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Paginas/Sobre/contato.html">
+                            Contato
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Paginas/Login/login.html" title="Botão Desabilitado temporariamente">
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="style-main">
+        <div class="main-first">
+            <div class="led-ball-purple"></div>
+            <div class="led-ball-blue"></div>
+            <div class="content-card">
+                <section class="presentation-card">
+                    <article class="text-card">
+                        <div class="division-card">
+                            <h1 class="future-text">
+                                Teachable <span class="blue-alem">Machine</span>,
+                            </h1>
+                            <h2 class="agility-text">
+                                Agilidade, Precisão e Confiabilidade
+                            </h2>
+                            <p class="way-text">
+                                Um protótipo que simplifica e otimiza processos. Verifique, automatize, valide. Tudo em
+                                um só lugar. Nossa solução completa oferece praticidade, agilidade e eficiência. Para
+                                saber como funcionar, basta clicar em saiba mais.
+                            </p>
+                        </div>
+                        <div class="submit-box-button">
+                            <a href="./Paginas/Sobre/sobre.html" class="saiba-mais">
+                                Saiba Mais
+                                <img src="./assets/images/landing_page_svg/rigth_arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <div class="button-scroll">
+            <a href="#Slider-Content" rel="noopener noreferrer">
+                Scroll
+                <svg width="100" height="140" viewBox="0 0 100 140" fill="none">
+                    <circle cx="50.5" cy="114.5" r="12" stroke="white" />
+                    <line x1="50.5" y1="15" x2="50.5" y2="115" stroke="white" />
+                </svg>
+            </a>
+        </div>
+        <div class="project-explication">
+            <section class="includeTitleProject">
+                <h1 class="title" id="Slider-Content">
+                    Teachable Machine
+                </h1>
+                <p class="subTitle">
+                    Agilidade, precisão e confiabilidade.
+                </p>
+            </section>
+            <section class="yolo">
+                <img src="./assets/images/landing_page_svg/yolo-apresentation.gif" alt="Gif de animação do Projeto"
+                    class="yolo-detected">
+            </section>
+            <section class="about-project">
+                <article>
+                    <h2 class="project-title">
+                        Objetivo do Projeto
+                    </h2>
+                    <p class="about-text">
+                        O projeto será desenvolvido de acordo com as necessidades do mercado da Porto e seu mercado em expansão de Seguro digital para bicicletas, reduzindo fraudes na contratação estes serviços. Atualmente, a empresa realiza exames físicos para funcionários contratados. Seguro de bicicleta, que leva tempo, esforço e custo para o cliente e cliente quanto a Porto. Além disso, as inspeções obrigatórias são realizadas apenas em bicicletas das seguintes regiões R$30.000 , o que pode resultar em contrato de seguro.
+                        <br>
+                        <br>
+                        O objetivo do projeto é automatizar o processo de inspeção, permitindo que os clientes executem remotamente enviando a imagem a ser avaliada, assim trazendo confiabilidade ao nosso software durante o contrato de serviço, para que o processo seja mais fácil e acessível. Com isso, espera-se aumentar o número de cheque inclui bicicletas com valor igual ou superior a R$ 2.000, anteriormente excluídas com cheque.Isso reduz o risco de fraude, resultando em melhore as operações da empresa e economize tempo e recursos. Com a implementação da solução, Porto poderá proporcionar maior comodidade e segurança Significativas reduções de custos operacionais para seus clientes.
+                    </p>
+                </article>
+            </section>
+        </div>
+        <div class="main-incomming">
+            <article class="content-card-comming">
+                <section>
+                    <h2 class="title-more-info">
+                        Em Breve
+                    </h2>
+                    <article class="more-info">
+                        <p>
+                            Pagina em construção, aguarda para mais novidades.
+                        </p>
+                        <p>
+                            Siga-nos no
+                            <a href="http://" target="_blank" rel="noopener noreferrer" class="linked">
+                                Instagram
+                            </a>.
+                        </p>
+                    </article>
+                </section>
+            </article>
+        </div>
+    </main>
+    <footer class="footer">
+        <section class="water-mark">
+            <p class="text-mark">
+                © 2023 DevSpot, Startup.
+            </p>
+        </section>
+        <nav class="nav-links">
+            <section class="redirection">
+                <a href="./Paginas/Sobre/sitemap.html">
+                    Sitemap
+                </a>
+            </section>
+            <section class="icons">
+                <!--        Twitter SVG icone      -->
+                <a href="http://" title="Twitter">
+                    <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24 2.48586C23.1177 2.90813 22.1682 3.19296 21.1719 3.32043C22.1891 2.66474 22.9691 1.62612 23.3369 0.387121C22.3855 0.995079 21.3322 1.43623 20.2102 1.67438C19.3123 0.644152 18.0325 0 16.6163 0C13.8973 0 11.6928 2.37361 11.6928 5.30167C11.6928 5.71659 11.7362 6.12102 11.8205 6.50972C7.72815 6.28835 4.09963 4.17807 1.67103 0.970425C1.24718 1.75306 1.00457 2.66369 1.00457 3.63621C1.00457 5.4753 1.8737 7.09827 3.19493 8.04876C2.38816 8.02096 1.62865 7.78229 0.964618 7.3852C0.964131 7.40723 0.964131 7.42978 0.964131 7.45234C0.964131 10.0206 2.66147 12.1628 4.9142 12.6507C4.50107 12.7713 4.06601 12.8364 3.61683 12.8364C3.29919 12.8364 2.9908 12.8033 2.69021 12.7409C3.31722 14.847 5.13538 16.3803 7.28969 16.4227C5.60453 17.8448 3.48188 18.6925 1.17459 18.6925C0.777541 18.6925 0.38536 18.6673 0 18.618C2.17965 20.1229 4.76755 21 7.5479 21C16.6051 21 21.5573 12.9219 21.5573 5.91592C21.5573 5.68617 21.5529 5.45694 21.5436 5.22928C22.5053 4.48336 23.3404 3.54913 24 2.48586Z"
+                            fill="url(#paint0_linear_34_200)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_34_200" x1="12" y1="0" x2="12" y2="24"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FDCBCB" stop-opacity="0" />
+                                <stop offset="0.0001" stop-color="#FDCBCB" />
+                                <stop offset="1" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </a>
+                <!--        Facebook SVG icone      -->
+                <a href="http://" title="Facebook">
+                    <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.0678 0C22.6861 0 24 1.14967 24 2.56569V18.4343C24 19.8503 22.6861 21 21.0678 21H16.0771V13.0875H19.199L19.793 9.69872H16.0771V7.49958C16.0771 6.57251 16.5961 5.66881 18.2605 5.66881H19.95V2.78377C19.95 2.78377 18.4167 2.55482 16.9508 2.55482C13.8905 2.55482 11.8902 4.17777 11.8902 7.11592V9.69872H8.48836V13.0875H11.8902V21H2.93222C1.31391 21 0 19.8503 0 18.4343V2.56569C0 1.14967 1.31386 0 2.93222 0L21.0678 0Z"
+                            fill="url(#paint0_linear_34_202)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_34_202" x1="12" y1="-1" x2="12" y2="26"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FDCBCB" stop-opacity="0.93" />
+                                <stop offset="1" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </a>
+                <!--        LinkedIn SVG icone      -->
+                <a href="http://" title="LinkedIn">
+                    <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.304343 6.83037H5.44783V21H0.304343V6.83037ZM2.91051 0C1.15011 0 0 1.05799 0 2.44665C0 3.80674 1.11646 4.89549 2.8432 4.89549H2.876C4.67006 4.89549 5.78731 3.80668 5.78731 2.44665C5.75366 1.05799 4.67011 0 2.91051 0ZM18.0765 6.49752C15.3463 6.49752 14.1231 7.87225 13.4408 8.83635V6.83037H8.29577C8.36389 8.15965 8.29577 21 8.29577 21H13.4408V13.0867C13.4408 12.6629 13.4745 12.2406 13.6098 11.937C13.9823 11.0909 14.8289 10.2147 16.2488 10.2147C18.1118 10.2147 18.8558 11.5147 18.8558 13.4187V20.9999H24V12.8748C24 8.52259 21.4627 6.49752 18.0765 6.49752Z"
+                            fill="url(#paint0_linear_34_204)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_34_204" x1="12" y1="-2.30762e-09" x2="12.0678"
+                                y2="27.4998" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FDCBCB" />
+                                <stop offset="1" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </a>
+                <!--        Github SVG icone      -->
+                <a href="https://github.com/luqsampaio/Challenge" title="Github">
+                    <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 0C5.37321 0 0 4.81901 0 10.7678C0 15.5258 3.43929 19.5573 8.20714 20.9824C8.80714 21.0808 9.02679 20.748 9.02679 20.462C9.02679 20.2042 9.01607 19.5292 9.01071 18.6291C5.67321 19.2807 4.96607 17.1853 4.96607 17.1853C4.41964 15.943 3.63214 15.6102 3.63214 15.6102C2.54464 14.9399 3.7125 14.9539 3.7125 14.9539C4.91786 15.0289 5.55 16.0649 5.55 16.0649C6.62143 17.7103 8.35714 17.2368 9.04286 16.9603C9.15 16.2665 9.46071 15.7883 9.80357 15.5211C7.14107 15.2492 4.33929 14.3258 4.33929 10.2005C4.33929 9.02391 4.80536 8.06293 5.57143 7.31289C5.44821 7.041 5.03571 5.94406 5.68929 4.46274C5.68929 4.46274 6.69643 4.17209 8.98929 5.56436C9.94821 5.32528 10.9714 5.20809 11.9946 5.2034C13.0125 5.20809 14.0411 5.32528 15 5.56436C17.2929 4.17209 18.2946 4.46274 18.2946 4.46274C18.9482 5.94406 18.5357 7.041 18.4125 7.31289C19.1786 8.06761 19.6446 9.0286 19.6446 10.2005C19.6446 14.3351 16.8375 15.2446 14.1643 15.5118C14.5929 15.8446 14.9786 16.5009 14.9786 17.504C14.9786 18.9432 14.9625 20.1057 14.9625 20.4573C14.9625 20.7433 15.1768 21.0808 15.7875 20.973C20.5661 19.5526 24 15.5211 24 10.7678C24 4.81901 18.6268 0 12 0Z"
+                            fill="url(#paint0_linear_34_207)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_34_207" x1="12" y1="0" x2="12" y2="25.5"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FDCBCB" />
+                                <stop offset="1" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </a>
+            </section>
+        </nav>
+    </footer>
+</body>
+
 </html>
